@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Loading</title>
+      <link rel="icon" 
+      type="image/png" 
+      href="Untitled45_20230721191925.png">
+      <p>Loading....</p>
+      <h1>Never Give Up</h1>
+      <link rel="icon" 
+      type="image/png" 
+      href="favicon2.png">
+   </head>
+   <body>
+      <div class="center">
+         <div class="ring"></div>
+         <span>G-Tech
+         </span>
+      </div>
+   </body>
+</html>
+<style>
+html{ 
+  scroll-behavior: smooth;
+}
+  h1{
+    color: #0000ff;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100px);
+  }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: black;
+  }
+  p{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 200px;
+    word-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(400px);
+    animation: text 3s ease-in-out infinite;
+  }
+  .center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100px);
+  }
+  .ring{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+  }
+  @keyframes ring {
+    0%{
+      transform: rotate(0deg);
+      box-shadow: 2px 10px 4px #e65c00;
+    }
+    50%{
+      transform: rotate(180deg);
+      box-shadow: 2px 10px 4px #18b201;
+    }
+    100%{
+      transform: rotate(360deg);
+      box-shadow: 2px 10px 4px #0456c8;
+    }
+  }
+  .ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+  }
+  span{
+    transform: translateY(-20px);
+    color: #a200ff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+  }
+  @keyframes text {
+    50%{
+      color: black;
+    }
+  }
+</style>
+<script>
+setInterval(myTimer, 10000);
+
+function myTimer() {
+      window.open("./login register", "_self");
+}
+</script>
